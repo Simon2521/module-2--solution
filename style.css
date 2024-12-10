@@ -1,0 +1,67 @@
+h1{
+    color:red;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#section-1{
+    width: 300px;
+    border:1px solid black;
+    float: left;
+    margin-right: 5px;
+    background-color: gray;
+
+
+}
+ 
+#section-2{
+    width: 300px;
+    border:1px solid black;
+    float: left;
+    margin-right: 5px;
+    background-color: gray;
+
+
+}
+ #section-3{
+    width: 300px;
+    border:1px solid black;
+    float: left;
+    margin-right: 5px;
+    background-color: gray;
+
+
+}
+ 
+#sec-1{
+    margin:0;
+    padding: 0;
+    border: 1px solid black;
+    width: 100px ;
+    color: blue;
+    background-color: yellow;
+
+}
+
+#sec-2 {
+    margin:0;
+    padding: 0;
+    border: 1px solid black;
+    width: 100px ;
+    color: green;
+    background-color: pink;
+
+}
+
+#sec-3 {
+    margin:0;
+    padding: 0;
+    border: 1px solid black;
+    width: 100px ;
+    color:orange;
+    background-color: aqua;
+
+}
