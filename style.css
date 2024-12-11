@@ -3,8 +3,10 @@ h1{
     text-align: center;
     padding:20px;
 }
+/**** Base Styles ****/
 
 *{
+* {
     box-sizing: border-box;
 }
 header{
@@ -19,6 +21,9 @@ header{
     background-color: gray;
 
 
+h1 {
+    font-weight: bold;
+    text-align: center;
 }
  
 #section-2{
@@ -26,17 +31,32 @@ header{
     border:1px solid black;
     float: left;
     margin-right: 5px;
+section {
     background-color: gray;
 
 
+    border: 1px solid black;
 }
  #section-3{
     width: 300px;
+
+div>p {
     border:1px solid black;
     float: left;
     margin-right: 5px;
     background-color: gray;
+}
 
+p {
+    text-align: center;
+    background-color: gray;
+    width: 50%;
+    padding: 5px;
+    margin-right: right;
+    margin-left: auto;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: large;
 
 }
  
@@ -46,8 +66,20 @@ header{
     border: 1px solid black;
     width: 100px ;
     color: blue;
+#p1 {
+    background-color: blue;
+}
+#p2 {
+    background-color: red;
+}
+#p3 {
     background-color: yellow;
+}
 
+.grid-wrapper {
+    padding: 25px;
+    display: grid;
+    grid-gap: 20px;
 }
 
 #sec-2 {
@@ -58,6 +90,12 @@ header{
     color: green;
     background-color: pink;
 
+
+/**** Large Devices only ****/
+@media only screen and (min-width: 992px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 #sec-3 {
@@ -67,5 +105,21 @@ header{
     width: 100px ;
     color:orange;
     background-color: aqua;
+/**** Medium Devices Only ****/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    #section3 {
+        grid-column: span 2;
+    }
+}
+   
+
+/**** Small Devices Only ****/
+@media only screen and (max-width: 768px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
